@@ -3,17 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gezegen cart curt</title>
+    <title>Solar Simulation </title>
     <style>
         body{
             margin: 0px;
         }
     </style>
+    <link href="./style.css" rel="stylesheet">
+
 </head>
 <body>
+    <div style=" position: absolute;background-color: white;  text-align: center;vertical-align: middle;" >
+        <buton id="how-to-use">how to use</buton>
+
+    </div>
+<div class="planet-card">
+        <div class="planet-card-header">
+            <!--title-->
+            <strong>Space Objects</strong>
+        </div>
+        <div class="planet-card-body">
+            <!--Body-->
+        </div>
+    </div>
+    
+    <div class="fun-card-info">
+        <div class="fun-card-info-inputs">
+            <div >
+                <label>Name </label>
+                <input name="fun-name"/>
+            </div>
+            <div>
+                <label>Mass</label>
+                <input name="mass">
+            </div>
+            <div>
+                <label>Radius</label>
+                <input name="radius">
+            </div>
+            <div>
+                <label>X Position</label>
+                <input name="xPos">
+            </div>
+            <div>
+                <label>Y Position</label>
+                <input name="yPos">
+            </div>
+            <div>
+                <label>Velocity X</label>
+                <input name="dirX">
+            </div>
+
+            <div>
+                <label>Velocity Y</label>
+                <input name="dirY">
+            </div>
+
+            <div>
+                <button name="fun-add">Add</button>
+            </div>
+        </div>
+
+    </div>
     <script type="module" src="./main.js"></script> 
-    <button style="position: absolute;" onclick="addObject()">
-        Yeni Cisim Ekle
-    </button>
 </body>
+
 </html>

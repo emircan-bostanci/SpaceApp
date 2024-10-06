@@ -12,12 +12,19 @@ class Card{
 class InfoCard extends Card{
     content = [];
     card; 
+    informations = []
     draw(){
         this.card = document.createElement("div");
         this.card.style.position = "absolute";
-        this.card.style.padding = "50px";
+        this.card.style.width = '250px';
+        this.card.style.height = '150px';
+        this.card.style.overflowY = "scroll";
+        this.card.style.padding = "5px";
         this.card.style.background = 'rgba(255, 255, 255,0.75)'
         this.card.innerHTML = `<strong style="color:black"> ${this.header} </strong>`
+        this.informations.forEach(x=>{
+            this.card.innerHTML += `<div>${x}</div>`
+        });
         document.body.appendChild(this.card);
     }
     updateCardPosition(camera,planet){
